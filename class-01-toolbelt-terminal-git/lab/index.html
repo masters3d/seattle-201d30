@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<script language="javascript">
+alert("Hi there, and welcome.")
+let nameQ = 'What is your name?'
+let name = prompt(nameQ)
+console.log(name)
+let ageQ = 'Hi, ' + name + '. How old are you?'
+let age = prompt(ageQ)
+console.log(age)
+let colorQ = 'You are young. What is your favorite color?'
+let color = prompt(colorQ)
+console.log(color)
+let icecreamQ = 'What is your favorite icecream that is ' + color + ' .'
+let icecream = prompt(icecreamQ)
+console.log(icecream)
+
+window.onload = function() {
+  let stringToShow = [nameQ, name, ageQ, age, colorQ, color, icecreamQ, icecream].join('<br>')
+  document.getElementById("questions").innerHTML = stringToShow ;
+}
+</script>
+<body>
+<p id="questions"></p>
+</body>
+</html>
